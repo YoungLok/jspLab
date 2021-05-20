@@ -1,5 +1,5 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
-<%@ page import = "java.net.URLEncoder" %>
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page import="java.net.URLEncoder"%>
 <%
 	Cookie cookie1 = new Cookie("path1", 
 			URLEncoder.encode("경로:/chap09/path1", "utf-8"));
@@ -22,21 +22,24 @@
 %>
 
 <html>
-<head><title>쿠키 경로 지정</title></head>
+<head>
+<title>쿠키 경로 지정</title>
+</head>
 <body>
 
-다음과 같이 쿠키를 생성했습니다.<br>
-<%= cookie1.getName() %>=<%= cookie1.getValue() %>
-[<%= cookie1.getPath() %>]
-<br>
-<%= cookie2.getName() %>=<%= cookie2.getValue() %>
-[<%= cookie2.getPath() %>]
-<br>
-<%= cookie3.getName() %>=<%= cookie3.getValue() %>
-[<%= cookie3.getPath() %>]
-<br>
-<%= cookie4.getName() %>=<%= cookie4.getValue() %>
-[<%= cookie4.getPath() %>]
+	다음과 같이 쿠키를 생성했습니다.
+	<br>
+	<%= cookie1.getName() %>=<%= cookie1.getValue() %>
+	[<%= cookie1.getPath() %>]
+	<br>
+	<%= cookie2.getName() %>=<%= cookie2.getValue() %>
+	[<%= cookie2.getPath() %>]
+	<br>
+	<%= cookie3.getName() %>=<%= cookie3.getValue() %>
+	[<%= cookie3.getPath() %>]
+	<br>
+	<%= cookie4.getName() %>=<%= cookie4.getValue() %>
+	[<%= cookie4.getPath() %>]
 
 </body>
 </html>

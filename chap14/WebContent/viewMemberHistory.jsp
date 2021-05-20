@@ -1,21 +1,23 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
+<%@ page contentType="text/html; charset=utf-8"%>
 
-<%@ page import = "java.sql.DriverManager" %>
-<%@ page import = "java.sql.Connection" %>
-<%@ page import = "java.sql.Statement" %>
-<%@ page import = "java.sql.ResultSet" %>
-<%@ page import = "java.sql.SQLException" %>
-<%@ page import = "java.io.Reader" %>
-<%@ page import = "java.io.IOException" %>
+<%@ page import="java.sql.DriverManager"%>
+<%@ page import="java.sql.Connection"%>
+<%@ page import="java.sql.Statement"%>
+<%@ page import="java.sql.ResultSet"%>
+<%@ page import="java.sql.SQLException"%>
+<%@ page import="java.io.Reader"%>
+<%@ page import="java.io.IOException"%>
 
 <%
 	String memberID = request.getParameter("memberID");
 %>
 <html>
-<head><title>회원 정보</title></head>
+<head>
+<title>회원 정보</title>
+</head>
 <body>
 
-<%
+	<%
 	Class.forName("com.mysql.jdbc.Driver");
 	
 	Connection conn = null;
@@ -36,14 +38,15 @@
 		rs = stmt.executeQuery(query);
 		if(rs.next()) {
 %>
-<table border="1">
-<tr>
-	<td>아이디</td><td><%= memberID %></td>
-</tr>
-<tr>
-	<td>히스토리</td>
-	<td>
-<%
+	<table border="1">
+		<tr>
+			<td>아이디</td>
+			<td><%= memberID %></td>
+		</tr>
+		<tr>
+			<td>히스토리</td>
+			<td>
+				<%
 			String history = null;
 			Reader reader = null;
 			try {
@@ -65,21 +68,22 @@
 			} finally {
 				if (reader != null) try { reader.close(); } catch(IOException ex) {}
 			}
-%>
-	<%= history %>
-	</td>
-</tr>
-</table>
-<%
+%> <%= history %>
+			</td>
+		</tr>
+	</table>
+	<%
 		} else {
 %>
-<%= memberID %> 회원의 히스토리가 없습니다.
-<%
+	<%= memberID %>
+	회원의 히스토리가 없습니다.
+	<%
 		}
 	} catch(SQLException ex) {
 %>
-에러 발생: <%= ex.getMessage() %>
-<%
+	에러 발생:
+	<%= ex.getMessage() %>
+	<%
 	} finally {
 		if (rs != null) try { rs.close(); } catch(SQLException ex) {}
 		if (stmt != null) try { stmt.close(); } catch(SQLException ex) {}

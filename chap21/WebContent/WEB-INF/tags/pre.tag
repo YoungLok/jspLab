@@ -1,5 +1,5 @@
-<%@ tag body-content="empty" pageEncoding="utf-8" %>
-<%@ tag trimDirectiveWhitespaces="true" %>
+<%@ tag body-content="empty" pageEncoding="utf-8"%>
+<%@ tag trimDirectiveWhitespaces="true"%>
 <%@ attribute name="value" type="java.lang.String" required="true"%>
 <%
 	value = value.replace("&", "&amp;");

@@ -1,9 +1,10 @@
-<%@ page contentType="text/html;charset=euc-kr" %>
+<%@ page contentType="text/html;charset=euc-kr"%>
 
 <html>
-	<head><title>설문조사 결과</title>
-	</head>
-	<body>
+<head>
+<title>설문조사 결과</title>
+</head>
+<body>
 
 	<%
 		String choiceseason = request.getParameter("season");
@@ -20,6 +21,8 @@
 		}
 	%>
 
-		당신이 가장 좋아하는 계절은 <%=result%> 입니다.
-	</body>
+	당신이 가장 좋아하는 계절은
+	<%=result%>
+	입니다.
+</body>
 </html>

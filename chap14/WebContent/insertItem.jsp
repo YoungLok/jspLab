@@ -1,8 +1,8 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
-<%@ page import = "java.sql.DriverManager" %>
-<%@ page import = "java.sql.Connection" %>
-<%@ page import = "java.sql.PreparedStatement" %>
-<%@ page import = "java.sql.SQLException" %>
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page import="java.sql.DriverManager"%>
+<%@ page import="java.sql.Connection"%>
+<%@ page import="java.sql.PreparedStatement"%>
+<%@ page import="java.sql.SQLException"%>
 <%
 	String idValue = request.getParameter("id");
 	
@@ -55,13 +55,16 @@
 	}
 %>
 <html>
-<head><title>ITEM 값 입력</title></head>
+<head>
+<title>ITEM 값 입력</title>
+</head>
 <body>
 
-<%  if (occuredException != null) { %>
-에러가 발생하였음: <%= occuredException.getMessage() %>
-<%  } else { %>
-데이터가 성공적으로 들어감
-<%  } %>
+	<%  if (occuredException != null) { %>
+	에러가 발생하였음:
+	<%= occuredException.getMessage() %>
+	<%  } else { %>
+	데이터가 성공적으로 들어감
+	<%  } %>
 </body>
 </html>

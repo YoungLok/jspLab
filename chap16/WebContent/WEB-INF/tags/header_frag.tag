@@ -1,7 +1,7 @@
-<%@ tag body-content="empty" pageEncoding="utf-8" %>
-<%@ tag trimDirectiveWhitespaces="true" %>
-<%@ attribute name="title" required="true" fragment="true" %>
-<%@ attribute name="level" type="java.lang.Integer" %>
+<%@ tag body-content="empty" pageEncoding="utf-8"%>
+<%@ tag trimDirectiveWhitespaces="true"%>
+<%@ attribute name="title" required="true" fragment="true"%>
+<%@ attribute name="level" type="java.lang.Integer"%>
 <%
 	String headStartTag = null;
 	String headEndTag = null;

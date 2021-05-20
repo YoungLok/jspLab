@@ -1,7 +1,7 @@
-<%@ page contentType = "text/plain; charset=utf-8" %>
-<%@ page import="java.io.InputStream" %>
-<%@ page import="java.io.IOException" %>
-<%@ page trimDirectiveWhitespaces="true" %>
+<%@ page contentType="text/plain; charset=utf-8"%>
+<%@ page import="java.io.InputStream"%>
+<%@ page import="java.io.IOException"%>
+<%@ page trimDirectiveWhitespaces="true"%>
 <%
     InputStream is = null;
     

@@ -1,7 +1,7 @@
-<%@ tag body-content="scriptless" pageEncoding="utf-8" %>
-<%@ attribute name="length" type="java.lang.Integer" %>
-<%@ attribute name="trail" %>
-<%@ attribute name="trim" %>
+<%@ tag body-content="scriptless" pageEncoding="utf-8"%>
+<%@ attribute name="length" type="java.lang.Integer"%>
+<%@ attribute name="trail"%>
+<%@ attribute name="trim"%>
 
 <jsp:doBody var="content" scope="page" />
 <%

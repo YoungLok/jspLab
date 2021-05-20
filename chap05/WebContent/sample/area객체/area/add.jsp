@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR" import="java.util.ArrayList"%>
+	pageEncoding="EUC-KR" import="java.util.ArrayList"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%	
+	<%	
 	// HTML 폼에서 입력된 한글 처리를 위한 부분
 	request.setCharacterEncoding("euc-kr");
 	// product 속성으로 전달된 파라미터를 읽어옴.

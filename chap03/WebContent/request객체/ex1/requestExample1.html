@@ -1,24 +1,25 @@
 <html>
-<head><title>request°´Ã¼ ¿¬½À</title>
-	<script>
+<head>
+<title>requestï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½</title>
+<script>
 	function check(){
 		if(document.myform.name.value == ""){
-			alert("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+			alert("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 			document.myform.name.focus();
 			return false;
 		}
 		if(document.myform.studentNum.value == ""){
-			alert("ÇÐ¹øÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+			alert("ï¿½Ð¹ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 			document.myform.studentNum.focus();
 			return false;
 		}		
 		if(document.myform.gender[0].checked != true && document.myform.gender[1].checked != true){
-			alert("¼ºº°À» ¼±ÅÃÇÏ¼¼¿ä!!");
+			alert("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½!!");
 			return false;
 		}		
 		if(document.myform.major[0].selected == true ){	
 //		if(document.myform.major.options[0].selected == true ){	
-			alert("ÇÐ°ú¸¦ ¼±ÅÃÇÏ¼¼¿ä!!");
+			alert("ï¿½Ð°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½!!");
 			return false;
 		}
 
@@ -26,24 +27,24 @@
 	</script>
 </head>
 <body onload="document.myform.name.focus()">
-<h1>Request ¿¹Á¦1</h1>
+	<h1>Request ï¿½ï¿½ï¿½ï¿½1</h1>
 
-<form name=myform method=post action="requestExample1.jsp" onSubmit="return check()">
- ÀÌ¸§ : <input type="text" name="name"><br>
- ÇÐ¹ø : <input type="text" name="studentNum"><br>
- ¼ºº° : ³²ÀÚ <input  type="radio" name="gender"  value="m">
-        ¿©ÀÚ <input type="radio" name="gender" value="f"><br>
- Àü°ø : <select name="major">
-			<option value="#" selected>Àü°øÀ» ¼±ÅÃÇÏ¼¼¿ä</option>
-			<option selected value="ÄÄÇ»ÅÍ°øÇÐ">ÄÄÇ»ÅÍ°øÇÐ</option>
-			<option value="¿µ¹®ÇÐ°ú">¿µ¹®ÇÐ°ú</option>
-			<option value="¼öÇÐ°ú">¼öÇÐ°ú</option>
-			<option value="Á¤Ä¡ÇÐ°ú">Á¤Ä¡ÇÐ°ú</option>
-			<option value="»ê¾÷µðÀÚÀÎ°ú">»ê¾÷µðÀÚÀÎ°ú</option>
-		</select><br>
-<input type="submit" value="º¸³»±â">
-<input type="reset" value="Ãë¼Ò">
-</form>
+	<form name=myform method=post action="requestExample1.jsp"
+		onSubmit="return check()">
+		ï¿½Ì¸ï¿½ : <input type="text" name="name"><br> ï¿½Ð¹ï¿½ : <input
+			type="text" name="studentNum"><br> ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ <input
+			type="radio" name="gender" value="m"> ï¿½ï¿½ï¿½ï¿½ <input
+			type="radio" name="gender" value="f"><br> ï¿½ï¿½ï¿½ï¿½ : <select
+			name="major">
+			<option value="#" selected>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½</option>
+			<option selected value="ï¿½ï¿½Ç»ï¿½Í°ï¿½ï¿½ï¿½">ï¿½ï¿½Ç»ï¿½Í°ï¿½ï¿½ï¿½</option>
+			<option value="ï¿½ï¿½ï¿½ï¿½ï¿½Ð°ï¿½">ï¿½ï¿½ï¿½ï¿½ï¿½Ð°ï¿½</option>
+			<option value="ï¿½ï¿½ï¿½Ð°ï¿½">ï¿½ï¿½ï¿½Ð°ï¿½</option>
+			<option value="ï¿½ï¿½Ä¡ï¿½Ð°ï¿½">ï¿½ï¿½Ä¡ï¿½Ð°ï¿½</option>
+			<option value="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½</option>
+		</select><br> <input type="submit" value="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"> <input
+			type="reset" value="ï¿½ï¿½ï¿½">
+	</form>
 
 </body>
 </html>

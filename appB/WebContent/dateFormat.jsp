@@ -15,11 +15,15 @@
 	<fmt:parseDate value="${dateString}" var="dateObject"
 		pattern="yyyy-MM-dd HH:mm:ss" />
 
-	<p>Date is :
-	<b><fmt:formatDate value="${dateObject }" pattern="yyyy-MM-dd" /></b></p>
-	
-	<p>Time is :
-	<b><fmt:formatDate value="${dateObject }" pattern="a hh:mm" /></b></p>
+	<p>
+		Date is : <b><fmt:formatDate value="${dateObject }"
+				pattern="yyyy-MM-dd" /></b>
+	</p>
+
+	<p>
+		Time is : <b><fmt:formatDate value="${dateObject }"
+				pattern="a hh:mm" /></b>
+	</p>
 
 </body>
 </html>

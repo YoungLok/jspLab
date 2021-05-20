@@ -1,9 +1,9 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
+<%@ page contentType="text/html; charset=utf-8"%>
 
-<%@ page import = "java.sql.DriverManager" %>
-<%@ page import = "java.sql.Connection" %>
-<%@ page import = "java.sql.Statement" %>
-<%@ page import = "java.sql.SQLException" %>
+<%@ page import="java.sql.DriverManager"%>
+<%@ page import="java.sql.Connection"%>
+<%@ page import="java.sql.Statement"%>
+<%@ page import="java.sql.SQLException"%>
 
 <%
 	request.setCharacterEncoding("utf-8");
@@ -36,13 +36,17 @@
 	}
 %>
 <html>
-<head><title>이름 변경</title></head>
+<head>
+<title>이름 변경</title>
+</head>
 <body>
-<%  if (updateCount > 0) { %>
-<%= memberID %>의 이름을 <%= name %>(으)로 변경
-<%  } else { %>
-<%= memberID %> 아이디가 존재하지 않음
-<%  } %>
+	<%  if (updateCount > 0) { %>
+	<%= memberID %>의 이름을
+	<%= name %>(으)로 변경
+	<%  } else { %>
+	<%= memberID %>
+	아이디가 존재하지 않음
+	<%  } %>
 
 </body>
 </html>

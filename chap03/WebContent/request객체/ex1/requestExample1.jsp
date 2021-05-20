@@ -21,10 +21,16 @@
 %>
 
 <body>
-성명 : <%=name%><p>
-학번 : <%=studentNum%><p>
-성별 : <%=gender%><p>
-학과 : <%=major%>
+	성명 :
+	<%=name%><p>
+		학번 :
+		<%=studentNum%>
+	<p>
+		성별 :
+		<%=gender%>
+	<p>
+		학과 :
+		<%=major%>
 </body>
 </html>
 

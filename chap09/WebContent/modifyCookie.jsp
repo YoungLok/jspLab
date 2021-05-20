@@ -1,5 +1,5 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
-<%@ page import = "java.net.URLEncoder" %>
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page import="java.net.URLEncoder"%>
 <%
 	Cookie[] cookies = request.getCookies();
 	if (cookies != null && cookies.length > 0) {
@@ -13,8 +13,9 @@
 	}
 %>
 <html>
-<head><title>값 변경</title></head>
-<body>
-name 쿠키의 값을 변경합니다.
+<head>
+<title>값 변경</title>
+</head>
+<body>name 쿠키의 값을 변경합니다.
 </body>
 </html>

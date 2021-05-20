@@ -1,19 +1,23 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
-<%@ page import = "java.sql.DriverManager" %>
-<%@ page import = "java.sql.Connection" %>
-<%@ page import = "java.sql.Statement" %>
-<%@ page import = "java.sql.ResultSet" %>
-<%@ page import = "java.sql.SQLException" %>
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ page import="java.sql.DriverManager"%>
+<%@ page import="java.sql.Connection"%>
+<%@ page import="java.sql.Statement"%>
+<%@ page import="java.sql.ResultSet"%>
+<%@ page import="java.sql.SQLException"%>
 <html>
-<head><title>회원 목록</title></head>
+<head>
+<title>회원 목록</title>
+</head>
 <body>
 
-MEMBMER 테이블의 내용
-<table width="100%" border="1">
-<tr>
-	<td>이름</td><td>아이디</td><td>이메일</td>
-</tr>
-<%
+	MEMBMER 테이블의 내용
+	<table width="100%" border="1">
+		<tr>
+			<td>이름</td>
+			<td>아이디</td>
+			<td>이메일</td>
+		</tr>
+		<%
 	
 	Connection conn = null;
 	Statement stmt = null;
@@ -27,12 +31,12 @@ MEMBMER 테이블의 내용
 		rs = stmt.executeQuery(query);
 		while(rs.next()) {
 %>
-<tr>
-	<td><%= rs.getString("NAME") %></td>
-	<td><%= rs.getString("MEMBERID") %></td>
-	<td><%= rs.getString("EMAIL") %></td>
-</tr>
-<%
+		<tr>
+			<td><%= rs.getString("NAME") %></td>
+			<td><%= rs.getString("MEMBERID") %></td>
+			<td><%= rs.getString("EMAIL") %></td>
+		</tr>
+		<%
 		}
 	} finally {
 		if (rs != null) try { rs.close(); } catch(SQLException ex) {}
@@ -40,7 +44,7 @@ MEMBMER 테이블의 내용
 		if (conn != null) try { conn.close(); } catch(SQLException ex) {}
 	}
 %>
-</table>
+	</table>
 
 </body>
 </html>

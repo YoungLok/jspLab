@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=utf-8" %>
+<%@ page contentType="text/html;charset=utf-8"%>
 <%@ page import="java.io.File"%>
 <%@ page import="java.io.*"%>
 <%@ page import="com.oreilly.servlet.ServletUtils"%>

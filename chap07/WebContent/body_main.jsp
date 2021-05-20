@@ -1,22 +1,26 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
+<%@ page contentType="text/html; charset=utf-8"%>
 <%
 	request.setCharacterEncoding("utf-8");
 %>
 <html>
-<head><title>INFO</title></head>
+<head>
+<title>INFO</title>
+</head>
 <body>
 
-include 전 name 파라미터 값: <%= request.getParameter("name") %>
+	include 전 name 파라미터 값:
+	<%= request.getParameter("name") %>
 
-<hr>
+	<hr>
 
-<jsp:include page="body_sub.jsp" flush="false">
-	<jsp:param name="name" value="최범균" />
-</jsp:include>
+	<jsp:include page="body_sub.jsp" flush="false">
+		<jsp:param name="name" value="최범균" />
+	</jsp:include>
 
-<hr/>
+	<hr />
 
-include 후 name 파라미터 값: <%= request.getParameter("name") %>
+	include 후 name 파라미터 값:
+	<%= request.getParameter("name") %>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<taglib xmlns="http://java.sun.com/xml/ns/javaee" 
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
@@ -14,9 +14,7 @@
 		<description>숫자 포맷팅</description>
 		<name>formatNumber</name>
 		<function-class>util.FormatUtil</function-class>
-		<function-signature>
-			java.lang.String number(long, java.lang.String)
-		</function-signature>
+		<function-signature>java.lang.String number(long, java.lang.String)</function-signature>
 	</function>
 
 </taglib>

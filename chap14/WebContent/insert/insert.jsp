@@ -1,9 +1,9 @@
-<%@ page contentType = "text/html; charset=utf-8" %>
+<%@ page contentType="text/html; charset=utf-8"%>
 
-<%@ page import = "java.sql.DriverManager" %>
-<%@ page import = "java.sql.Connection" %>
-<%@ page import = "java.sql.PreparedStatement" %>
-<%@ page import = "java.sql.SQLException" %>
+<%@ page import="java.sql.DriverManager"%>
+<%@ page import="java.sql.Connection"%>
+<%@ page import="java.sql.PreparedStatement"%>
+<%@ page import="java.sql.SQLException"%>
 
 <%
 	request.setCharacterEncoding("utf-8");
@@ -39,10 +39,10 @@
 	}
 %>
 <html>
-<head><title>삽입</title></head>
-<body>
-
-MEMBER 테이블에 새로운 레코드를 삽입했습니다
+<head>
+<title>삽입</title>
+</head>
+<body>MEMBER 테이블에 새로운 레코드를 삽입했습니다
 
 </body>
 </html>
