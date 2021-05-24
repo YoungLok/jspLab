@@ -5,7 +5,8 @@
 <title>EL min, max</title>
 </head>
 <body>
-	${ vals = [20, 17, 30, 2, 9, 23] ; '' } ${ vals.stream().min().get() }
+	${ vals = [20, 17, 30, 2, 9, 23] ; '' } 
+	${ vals.stream().min().get() }
 	<hr>
 	<%
     List<Member> memberList = Arrays.asList(
