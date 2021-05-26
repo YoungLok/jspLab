@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	오늘은
+	오늘은  1
 	<b><tf:now /></b> 입니다.
 
 </body>
